@@ -29,8 +29,6 @@ RUN python3 -m pip install --trusted-host pypi.org --trusted-host pypi.python.or
     opencv-contrib-python-headless==4.7.0.72 \
     jupyterlab
 
-RUN mim install mmcv_full==1.7.1
 
-
-CMD ["jupyter", "lab","--ip=0.0.0.0","--NotebookApp.allow_origin='*'","--port=8888", "--no-browser","--NotebookApp.token=''","--NotebookApp.password=''","--ServerApp.terminado_settings={\"shell_command\": [\"/bin/bash\"]}"]
+CMD ["jupyter", "lab","--ip=0.0.0.0","--NotebookApp.allow_origin='*'","--port=8889", "--no-browser","--NotebookApp.token=''","--NotebookApp.password=''","--ServerApp.terminado_settings={\"shell_command\": [\"/bin/bash\"]}"]
 
